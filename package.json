@@ -1,9 +1,9 @@
 {
-  "name": "stremio-prueba-addon",
+  "name": "stremio-custom-addon",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "stremio-addon-sdk": "^1.6.0",
-    "express": "^4.18.2"
+    "stremio-addon-sdk": "^1.5.0",
+    "node-fetch": "^3.3.2"
   }
 }
