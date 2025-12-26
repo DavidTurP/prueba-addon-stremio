@@ -1,5 +1,5 @@
-const { addonBuilder } = require("stremio-addon-sdk");
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 const LINKS_URL = "https://gist.githubusercontent.com/DavidTurP/e1669bd33899df3dc949ceda9977555d/raw/d6c09e99a427095e7479a5dda803b1ba45922b83/links.json";
 
@@ -34,4 +34,9 @@ builder.defineStreamHandler(async ({ id }) => {
   }
 });
 
-module.exports = builder.getInterface();
+// ⭐️ SERVIDOR PARA RENDER ⭐️
+const ADDON = builder.getInterface();
+const PORT = process.env.PORT || 3000;
+
+serveHTTP(ADDON, { port: PORT });
+console.log("Addon funcionando en puerto", PORT);
