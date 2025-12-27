@@ -9,7 +9,7 @@ const manifest = {
   name: "JD Addon",
   description: "Addon exclusivamente para peliculas y series en castellano. Actualizaciones automaticas. ©JD Entreniment",
   logo: "https://imgur.com/Zq15YMK.png",
-  types: ["pelicula", "series"],
+  types: ["peliculas", "series"],
   catalogs: [],
   resources: ["stream"],
   background: "https://imgur.com/vw0C2QE.png"
