@@ -6,7 +6,7 @@ const LINKS_URL = "https://gist.githubusercontent.com/DavidTurP/e1669bd33899df3d
 const manifest = {
   id: "org.custom.links",
   version: "1.0.0",
-  name: "Addon Privado JD",
+  name: "JD Addon",
   description: "©JD Entreniment",
   types: ["movie", "series"],
   catalogs: [],
